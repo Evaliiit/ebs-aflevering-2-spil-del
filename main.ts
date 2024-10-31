@@ -77,7 +77,6 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
     }
     sprites.destroyAllSpritesOfKind(SpriteKind.SelectablePlayer)
     sprites.destroyAllSpritesOfKind(SpriteKind.background)
-    info.startCountdown(100)
 })
 scene.onOverlapTile(SpriteKind.Player, sprites.builtin.forestTiles5, function (sprite, location) {
     setSpeed(40, sprite)
